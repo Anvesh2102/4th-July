@@ -104,32 +104,102 @@ input{
     width: 16px;
 }
 #sales{
+    /* display: inline-block; */
     display: flex;
     justify-content: center;
+    padding-top: 20px;
     gap: 30px;
 }
 .sale img{
     height: 300px;
     width: 250px;
-    border-radius: 10%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 .sale:hover{
     transform: scale(1.05);
-    transition: 3ms;
+    transition: 1000ms;
+    transition-delay: 2ms;
 }
+/* .sale:hover{
+    transform: scale(1.05);
+    transition: 1000ms;
+    transition-delay: 2ms;
+} */
 #t1{
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
-    justify-content: center;
 }
 .details{
-    padding-left: 15px;
-    padding-top: 10px;
+    text-align: center;
+    /* padding-left: 15px;*/
+    padding-top: 2px;
 }
 .sale{
-    height: 375px;
+    height: 405px;
     background-color: rgb(255, 255, 255);
     border-radius: 10%;
+}
+/* .addtocart{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    bottom: 15px;
+    right: 10px;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #000000cb;
+}
+.addtocart:hover{
+    background-color: #000000d9;
+} */
+ .addtocart{
+    width: 125px;
+    height: 30px;
+    align-items: center;
+    position: relative;
+    top: 5px;
+    left: 25%;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0);
+    color: #d3c9c9cc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+ }
+ .addtocart:hover{
+    /* background-color: rgb(0, 0, 0); */
+    color: #d3c9c9;
+ }
+.sale h3{
+    color: rgb(106, 105, 105);
+}
+/* .main{
+    display: flex;
+    gap: 20px;
+} */
+.cart{
+    height: fit-content;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgb(253, 226, 190);
+}
+#purchase button{
+    background-color: #bb903f;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    width: 150px;
+    /* border-radius: 30px; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#prch:hover{
+    background-color: #deaa4a;
+    transform: scale(0.95);
+    transition: 1s;
+    
+}
+.cart p{
+    padding-bottom: 5px;
 }
