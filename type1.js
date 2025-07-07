@@ -1,8 +1,9 @@
 let cart = [];
-
+let btn=document.createElement("button");
+btn.textContent="Remove";
   function addToCart(productName, price) {
     // Add item to the cart array
-    cart.push({ name: productName, price: price });
+    cart.push({ name: productName, price: price, remove: btn });
 
     // Update the UI
     renderCart();
@@ -21,8 +22,12 @@ let cart = [];
       let li = document.createElement("li");
       li.innerText = `${item.name} - ₹${item.price}`;
       cartItems.appendChild(li);
+      // let additem=document.getElementsByClassName[index]("sale");
+      // let cartpop=document.getElementById("cartList");
+      // cartpop.appendChild(additem);
     });
 
     // Update total
     document.getElementById("cart-total").innerText = total;
   }
+  let cartDiv=document.getElementById("cartdiv")

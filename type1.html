@@ -24,50 +24,66 @@
                 <a id="kid" >KIDS</a>
                 <a id="beauty" >BEAUTY</a>
                 <a id="hnk" >HOME & KITCHEN</a>
-                <input type="search" name="btn" id="search" placeholder="   Search AJIO                                🔍︎" /><button onclick="" name="search" type="submit">search</button>
-                <a href="" id="wish"><img src="like.png" alt="wish list" id="like"></a>
-                <a href="" id="cart"><img src="shopping.png" alt="Cart" id="ord"></a>
-            </div>
+                <input type="search" name="btn" id="search" placeholder="   Search AJIO  " /><button onclick="search()" name="search" type="submit" id="srch">🔍︎</button>
+                <!-- <div class="codiv"> -->
+                    <img src="like.png" alt="wish list" id="wi">
+                    
+                <!-- </div> -->
+                    <img src="shopping.png" alt="Cart" id="ord">
+                        
             </div>
         </div>
+        <div id="cartdiv" class="checkdiv">
+                        <div id="cartList" class="checkout"><h3>Cart Items</h3></div>
+                        <div id="prch"><a href=""><button>PLACE ORDER</button></a></div>
+                    </div>
+                    <div class="codiv"></div>
+                            <div id="wishdiv" class="checkdiv" >
+                            <div id="wishList" class="checkout"><h3>Wish List</h3></div>
+                            </div>
+                        </div>
     </header>
     <h1 id="t1">UP TO 30% OFF</h1>
-    <div class="cart">
+    <!-- <div class="cart">
     <h2>Your Cart</h2>
 <ul id="cart-items"></ul>
 <p><strong>Total: ₹<span id="cart-total">0</span></strong></p>
 <a href="" id="purchase"><button id="prch" type="submit">PLACE ORDER</button></a>
-</div>
+</div> -->
     <div id="sales">
     <div class="sale">
         <a href="" target=""><img id="s1" src="pro1.png" alt="product1"></a>
         <h2 class="details">Formal Coat</h2>
-        <h3 id="pro1" class="details">₹ 1,499/-</h3>
-        <button onclick="addToCart('Formal Coat',1499)" id="add1" class="addtocart">ADD TO CART</button>
+        <h3 class="price">₹ 1,499/-</h3>
+        <button id="like1" class="addtowish">WISH LIST</button>
+        <button id="add1" class="addtocart">ADD TO CART</button>
     </div>
     <div class="sale">
         <a href="" target=""><img src="pro2.png" alt="product2"></a>
         <h2 class="details">Chinos and T-shirt</h2>
-        <h3 id="pro1" class="details">₹ 1,399/-</h3>
-        <button onclick="addToCart('Chinos and T-shirts',1399)" id="add2" class="addtocart">ADD TO CART</button>
+        <h3 class="price" >₹ 1,399/-</h3>
+        <button id="like2" class="addtowish">WISH LIST</button>
+        <button id="add2" class="addtocart">ADD TO CART</button>
     </div>
     <div class="sale">
         <a href="" target=""><img src="pro3.png" alt="product3"></a>
         <h2 class="details">Baggy Jeans</h2>
-        <h3 id="pro1" class="details">₹ 899/-</h3>
-        <button onclick="addToCart('Baggy Jeans',899)" id="add3" class="addtocart">ADD TO CART</button>
+        <h3 class="price" >₹ 899/-</h3>
+        <button id="like3" class="addtowish">WISH LIST</button>
+        <button id="add3" class="addtocart">ADD TO CART</button>
     </div>
     <div class="sale">
         <a href="" target=""><img src="pro4.png" alt="product4"></a>
         <h2 class="details">Black Shirt</h2>
-        <h3 id="pro1" class="details">₹ 999/-</h3>
-        <button onclick="addToCart('Black Shirt',999)" id="add4" class="addtocart">ADD TO CART</button>
+        <h3 class="price">₹ 999/-</h3>
+        <button id="like4" class="addtowish">WISH LIST</button>
+        <button id="add4" class="addtocart">ADD TO CART</button>
     </div>
 </div><br><br><br>
 
 <footer class="foot">
     
 </footer>
-<script src="type1.js"></script>
+<script src="types.js"></script>
 </body>
 </html>
